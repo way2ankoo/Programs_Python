@@ -64,7 +64,7 @@ def find_unique_triplets(arr, target_sum):
                 if third_element in element_count:
                     # Create a sorted tuple of the triplet to avoid duplicates
                     triplet = tuple(sorted((first_element, second_element, third_element)))
-                    print(triplet)
+                    # print(triplet)
                     if triplet not in seen_triplets:
                         seen_triplets.add(triplet)
                         print(f"{triplet[0]}, {triplet[1]}, {triplet[2]}")
